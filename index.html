@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Birthday Surprise – For You 💕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="screen-1-bg">
+  <div id="heart-container"></div>
+
+  <main class="app-shell">
+    <!-- Screen 1: The Lock Screen -->
+    <section id="screen-1" class="screen active">
+      <div class="screen-inner center-content">
+        <h1 class="hero-title">A Little Secret Message Awaits…</h1>
+        <div class="name-field">
+          <label for="name-input" class="name-label">Type your name to begin</label>
+          <input
+            id="name-input"
+            class="name-input"
+            type="text"
+            autocomplete="name"
+            placeholder="Your beautiful name..."
+          />
+          <small class="name-hint">
+            Once you type your name, the secret will unlock.
+          </small>
+        </div>
+        <button id="unlock-btn" class="primary-btn pulse is-hidden" disabled>
+          Unlock the Message
+        </button>
+      </div>
+    </section>
+
+    <!-- Screen 2: The Space Love Theme -->
+    <section id="screen-2" class="screen">
+      <div class="space-bg">
+        <div class="stars"></div>
+        <div class="stars stars-2"></div>
+        <div class="hearts-glow"></div>
+      </div>
+      <div class="screen-inner">
+        <h2 class="screen-title">My Space For You 💫</h2>
+        <p class="screen-subtitle">
+           MORE HAPPY RETURNS OF THE DAY AYSHU!!!!  
+        </p>
+          
+          dont think its toucher unaku pudikala tha ana na mosamanavan ila 
+          unakga evlo panirukan bday small wish ipadi pandra !!!udane distubance and toucher nenaiktha seriya... ini na msg panamata
+          distubance ah irukamatn na poidran pothum enaku valikuthu ne peasanathu behave panthu  but na  poidran ithoda un bday gift ah vachi 
+          na una vitu poidra totala byeeee........
+
+          lasta ethaana solanum keela iruka box la type panidu bye !!!!!!!!
+        </p>
+
+        <textarea
+          class="message-area"
+          placeholder="Happy Birthday my love... 💖&#10;This universe feels right only with you in it."
+        ></textarea>
+
+        <div class="image-row">
+          <div class="image-card">
+            <img
+              src="https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Romantic placeholder 1"
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://images.pexels.com/photos/1028725/pexels-photo-1028725.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Romantic placeholder 2"
+            />
+          </div>
+        </div>
+
+        <button id="next-to-quiz" class="primary-btn">
+          Next
+        </button>
+      </div>
+    </section>
+
+    <!-- Screen 3: The Quiz -->
+    <section id="screen-3" class="screen">
+      <div class="space-bg">
+        <div class="stars"></div>
+        <div class="stars stars-2"></div>
+        <div class="hearts-glow"></div>
+      </div>
+      <div class="screen-inner">
+        <h2 class="screen-title">Tiny Little Quiz 💌</h2>
+        <p class="screen-subtitle">
+          Answer honestly. I promise I won’t be mad… maybe. 😉
+        </p>
+
+        <form id="love-quiz-form" class="quiz-form">
+          <!-- Answers are kept only on this device and shown on the final pages. No email is sent. -->
+          <div class="question-block">
+            <p class="question-text">1. Would you really hate me?</p>
+            <label>
+              <input type="radio" name="would_hate_me" value="Yes" required />
+              <span>Yes</span>
+            </label>
+            <label>
+              <input type="radio" name="would_hate_me" value="No" />
+              <span>No</span>
+            </label>
+            <label>
+              <input type="radio" name="would_hate_me" value="Maybe" />
+              <span>Maybe</span>
+            </label>
+          </div>
+
+          <div class="question-block">
+            <p class="question-text">2. Do you miss me?</p>
+            <label>
+              <input type="radio" name="do_you_miss_me" value="Yes" required />
+              <span>Yes</span>
+            </label>
+            <label>
+              <input type="radio" name="do_you_miss_me" value="No" />
+              <span>No</span>
+            </label>
+          </div>
+
+          <div class="question-block">
+            <p class="question-text">
+              3. What gift you need I will give now and go?
+            </p>
+            <textarea
+              name="gift_request"
+              class="quiz-input"
+              placeholder="Tell me anything, I'll at least try… 🎁"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="primary-btn">
+            Submit Answers
+          </button>
+
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Screen 4: The Finale for her -->
+    <section id="screen-4" class="screen">
+      <div class="screen-inner finale-inner">
+        <div class="finale-top-graphic">
+          <!-- Placeholder for a bike with a broken heart -->
+          <div class="bike-heart-placeholder">
+            🚲💔
+          </div>
+        </div>
+
+        <div class="image-card large">
+          <img
+            src="ayshu.jpg"
+            alt="Moody romantic placeholder"
+          />
+        </div>
+
+        <div class="video-wrapper">
+          <video
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
+
+        <button id="admin-view-btn" class="secondary-link-btn">
+          Admin view (for me)
+        </button>
+
+        <div class="missed-you-wrapper">
+          <span class="missed-you-text">Missed you</span>
+          <span class="missed-you-glow"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 5: Admin responses page -->
+    <section id="screen-5" class="screen">
+      <div class="screen-inner finale-inner">
+        <h2 class="screen-title">Admin – Saved Responses</h2>
+        <p class="screen-subtitle">
+          This page is just for you to quietly see what was written and answered.
+        </p>
+
+        <div class="summary-card">
+          <h3>Current session data</h3>
+          <p class="summary-row">
+            <span class="summary-label">Name:</span>
+            <span id="admin-name" class="summary-value">—</span>
+          </p>
+          <p class="summary-row">
+            <span class="summary-label">Space message:</span>
+            <span id="admin-message" class="summary-value">—</span>
+          </p>
+          <p class="summary-row">
+            <span class="summary-label">Q1 – Would you really hate me?</span>
+            <span id="admin-q1" class="summary-value">—</span>
+          </p>
+          <p class="summary-row">
+            <span class="summary-label">Q2 – Do you miss me?</span>
+            <span id="admin-q2" class="summary-value">—</span>
+          </p>
+          <p class="summary-row">
+            <span class="summary-label">Q3 – Gift requested:</span>
+            <span id="admin-q3" class="summary-value">—</span>
+          </p>
+        </div>
+
+        <button id="back-to-finale-btn" class="secondary-link-btn">
+          Back to finale
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
