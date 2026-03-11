@@ -30,6 +30,9 @@
         <button id="unlock-btn" class="primary-btn pulse is-hidden" disabled>
           Unlock the Message
         </button>
+        <button id="admin-view-btn-screen1" class="secondary-link-btn">
+          Admin view (for me)
+        </button>
       </div>
     </section>
 
@@ -49,7 +52,7 @@
           dont think its toucher unaku pudikala tha ana na mosamanavan ila 
           unakga evlo panirukan bday small wish ipadi pandra !!!udane distubance and toucher nenaiktha seriya... ini na msg panamata
           distubance ah irukamatn na poidran pothum enaku valikuthu ne peasanathu behave panthu  but na  poidran ithoda un bday gift ah vachi 
-          na una vitu poidra totala byeeee........
+          na una vitu poidra totala byeeee.........
 
           lasta ethaana solanum keela iruka box la type panidu bye !!!!!!!!
         </p>
@@ -90,7 +93,7 @@
       <div class="screen-inner">
         <h2 class="screen-title">Tiny Little Quiz 💌</h2>
         <p class="screen-subtitle">
-          Answer honestly. I promise I won’t be mad… maybe. 😉
+          Answer honestly. I promise I won't be mad… maybe. 😉
         </p>
 
         <form id="love-quiz-form" class="quiz-form">
@@ -188,36 +191,59 @@
       <div class="screen-inner finale-inner">
         <h2 class="screen-title">Admin – Saved Responses</h2>
         <p class="screen-subtitle">
-          This page is just for you to quietly see what was written and answered.
+          This page shows all responses from everyone. You can delete any response or add new ones manually.
         </p>
 
-        <div class="summary-card">
-          <h3>Current session data</h3>
-          <p class="summary-row">
-            <span class="summary-label">Name:</span>
-            <span id="admin-name" class="summary-value">—</span>
-          </p>
-          <p class="summary-row">
-            <span class="summary-label">Space message:</span>
-            <span id="admin-message" class="summary-value">—</span>
-          </p>
-          <p class="summary-row">
-            <span class="summary-label">Q1 – Would you really hate me?</span>
-            <span id="admin-q1" class="summary-value">—</span>
-          </p>
-          <p class="summary-row">
-            <span class="summary-label">Q2 – Do you miss me?</span>
-            <span id="admin-q2" class="summary-value">—</span>
-          </p>
-          <p class="summary-row">
-            <span class="summary-label">Q3 – Gift requested:</span>
-            <span id="admin-q3" class="summary-value">—</span>
-          </p>
+        <div class="admin-stats">
+          <span>Total Responses: <strong id="responses-count">0</strong></span>
         </div>
 
-        <button id="back-to-finale-btn" class="secondary-link-btn">
-          Back to finale
-        </button>
+        <!-- Add New Response Form -->
+        <div class="admin-add-form">
+          <h3>Add New Response</h3>
+          <div class="admin-form-row">
+            <input type="text" id="admin-add-name" class="admin-input" placeholder="Name" />
+          </div>
+          <div class="admin-form-row">
+            <textarea id="admin-add-message" class="admin-textarea" placeholder="Message" rows="2"></textarea>
+          </div>
+          <div class="admin-form-row admin-form-row-inline">
+            <select id="admin-add-q1" class="admin-select">
+              <option value="">Q1 - Would you hate me?</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Maybe">Maybe</option>
+            </select>
+            <select id="admin-add-q2" class="admin-select">
+              <option value="">Q2 - Do you miss me?</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="admin-form-row">
+            <input type="text" id="admin-add-q3" class="admin-input" placeholder="Q3 - Gift requested" />
+          </div>
+          <button id="add-response-btn" class="primary-btn admin-add-btn">
+            Add Response
+          </button>
+        </div>
+
+        <!-- Responses List -->
+        <div id="responses-container" class="responses-list">
+          <p class="no-responses">No responses saved yet.</p>
+        </div>
+
+        <div class="admin-actions">
+          <button id="export-excel-btn" class="secondary-link-btn export-btn">
+            📥 Export to Excel
+          </button>
+          <button id="back-to-finale-btn" class="secondary-link-btn">
+            Back to finale
+          </button>
+          <button id="back-to-home-btn" class="secondary-link-btn">
+            Back to home
+          </button>
+        </div>
       </div>
     </section>
   </main>
@@ -225,3 +251,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
